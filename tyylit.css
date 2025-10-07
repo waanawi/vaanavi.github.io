@@ -144,18 +144,24 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .card-container { grid-template-columns: 1fr; }
-  .lead { max-width: 90%; }
+  body { padding-top: 0; }
 
   nav {
+    position: sticky;
+    top: 0;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    padding: 1rem 0.5rem;
+    padding: 0.75rem 0.5rem;
   }
 
   nav a {
     width: 90%;
     max-width: 20rem;
   }
+
+  .card-container { grid-template-columns: 1fr; }
+  .lead { max-width: 90%; }
+
+  main :is(h1, h2, h3, h4) { scroll-margin-top: 4.5rem; }
 }
