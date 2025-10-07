@@ -1,7 +1,7 @@
 :root {
   --text-dark: #3B2F2F;
   --accent: #D9825C;
-  font-size: 100%; /* 1rem = 16px */
+  font-size: 100%; /* HUOM. 1rem on 16px */
 }
 
 html { scrollbar-gutter: stable; }
@@ -71,7 +71,6 @@ p {
   font-size: 1.25rem;
   margin-top: 1.25rem;
 }
-
 
 .lead {
   max-width: 65%;
@@ -147,4 +146,16 @@ footer p {
 @media (max-width: 768px) {
   .card-container { grid-template-columns: 1fr; }
   .lead { max-width: 90%; }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+
+  nav a {
+    width: 90%;
+    max-width: 20rem;
+  }
 }
